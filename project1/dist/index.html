@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template in tailwind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  </head>
+  <body>
+     <header class="w-full h-auto bg-[#072d26] pb-16">
+
+      <!-- mavbar start here -->
+       <nav>
+         <div class="w-full flex flex-wrap justify-between items-center text-white py-4 md:py-4 px-4 md:px-16 font-custom1" >
+           <img class="w-32 md:w-auto" src="https://uiparadox.co.uk/public/templates/logisco/assets/media/logo.png" alt="logo" srcset="">
+             <ul class="lg:flex md:hidden hidden space-x-6 text-base font-custom1">
+               <li class="font-medium">Home</li>
+               <li class="font-medium">About Us</li>
+               <li class="font-medium">Pages</li>
+               <li class="font-medium">Blog</li>
+               <li class="font-medium">Contact Us</li>
+             </ul>
+             <div class="lg:flex md:hidden hidden space-x-4">
+                <button class="border-[1px] py-[11px] px-8 text-sm font-medium">Contact Us</button>
+                <button class="px-8 text-sm font-medium bg-orange-500">Get a Quote</button>
+             </div>
+             <img class="lg:hidden" src="https://uiparadox.co.uk/public/templates/logisco/assets/media/icons/menu-2.png" alt="">
+          
+        </div>
+       </nav>
+       <!-- navbar end here -->
+
+        <!-- hero section start here -->
+       <div class="w-full h-auto flex flex-wrap flex-col-reverse  md:flex-row py-10 md:py-20 px-4 md:px-14">
+         <div class=" md:w-[600px] px-1 mt-9 md:mt-6 ">
+        
+           <h1 class="text-[48px] font-[500] text-[#fafafa] leading-[54px] font-custom2 ">Fast and secure courier for all your <span class="text-[50px] font-[650] text-[#ff832f] font-custom1 tracking-tight">PACKAGES</span></h1>
+           <p class="text-[#eaeaec] text-[15px] mt-7 font-custom1" >Vestibulum et mauris pharetra curabitur id suspendisse amet tristique massa. Orci egestas egestas ac ultrices. Adipiscing a blandit proin lacus.</p>
+           <div class="mt-8  font-custom1 flex flex-wrap justify-center md:justify-start space-x-2 ">
+             <button class="py-[12px] px-[31px] bg-[#ff832f] text-[14px] font-medium text-white font-custom1">Get a Quote</button>
+             <button class="py-[9px] px-[30px] border-[1px] text-[14px] font-medium text-white font-custom1 ">Contact Us</button>
+           </div>
+           <div class=" mt-7 flex flex-wrap  md:justify-start md:space-x-5">
+             <div class="border-[1px]  w-[155px] md:w-auto flex flex-wrap flex-col justify-center py-2 md:py-3 px-2 md:px-8  text-center mt-4 mx-auto  md:mt-0 md:mx-0">
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">New York</p>
+              <p class="text-[20px] font-semibold font-custom2 text-[#ff832f]">05:30</p>
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">PM/Mon</p>
+             </div>
+             <div class="border-[1px] w-[155px] md:w-auto flex flex-wrap flex-col justify-center py-2 md:py-3 px-2 md:px-8  text-center mt-4 mx-auto md:mt-0 md:mx-0" >
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">Leicester</p>
+              <p class="text-[20px] font-semibold font-custom2 text-[#ff832f]">02:00</p>
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">PM/Mon</p>
+             </div>
+             <div class="border-[1px] w-[155px] md:w-auto flex flex-wrap flex-col justify-center py-2 md:py-3 px-2 md:px-8  text-center mt-4 mx-auto  md:mt-0 md:mx-0">
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">Lincoin</p>
+              <p class="text-[20px] font-semibold font-custom2 text-[#ff832f]">01:30</p>
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">PM/Mon</p>
+             </div>
+             <div class="border-[1px] w-[155px] md:w-auto flex flex-wrap flex-col justify-center py-2 md:py-3 px-2 md:px-8  text-center mt-4 mx-auto  md:mt-0 md:mx-0">
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">Manchester</p>
+              <p class="text-[20px] font-semibold font-custom2 text-[#ff832f]">03:30</p>
+              <p class="text-[15px] font-semibold text-[#fafafa] font-custom2 ">PM/Mon</p>
+             </div>
+           </div>
+
+         </div>
+
+         <div class="max-w-[45%] hidden md:flex flex-wrap md:ml-4 pl-4" >
+           <img class="h-52 absolute hidden sm:hidden md:hidden lg:block top-0 right-[375px]" src="image/hook.png" alt="">
+           <img class=" h-[350px] hidden sm:hidden md:hidden lg:block mt-9 animate-slide " src="image/container-and-rope.png" alt="">
+         </div>
+         <img class="md:hidden mt-9" src="image/hero-img-mobile.png" alt="">
+
+       </div>
+       <!-- hero section end here -->
+     </header>
+
+    <!-- main-section start here -->
+     <main class="w-full h-[4530px] bg-[#ededed] py-24"> 
+       <!-- div1 start here -->
+        <div class="md:mx-20">
+          <h2 class="text-[35px] md:text-[48px] font-medium font-custom2 px-10  text-center leading-[58px]"><span class=" text-[#ff832f]">One-stop logistics </span>provider, ensuring timely and <span class=" text-[#ff832f]">damage-free</span> deliveries to your exact destination.</h2>
+        </div>
+
+        <div class=" mt-14 flex flex-wrap flex-row justify-center space-x-4 md:space-x-0 md:justify-between px-4 md:px-24 md:pr-24">
+           <div class="text-center font-custom2 my-3 md:my-0">
+            <h2 class="text-[28px] md:text-[46px] font-medium">6K+</h2>
+            <p class="text-[14px] md:text-[15px] tracking-wide text-[#141516]" >New Partners Every Year</p>
+           </div>
+           <div class="text-center font-custom2 my-3 md:my-0">
+            <h2 class="text-[28px] md:text-[46px] font-medium">25+</h2>
+            <p class="text-[14px] md:text-[15px] tracking-wide text-[#141516]" >Years of Field Experience</p>
+           </div>
+           <div class="text-center font-custom2 my-3 md:my-0">
+            <h2 class="text-[28px] md:text-[46px] font-medium">9K+</h2>
+            <p class="text-[14px] md:text-[15px] tracking-wide text-[#141516]" >Well Trained Staffs Worldwide</p>
+           </div>
+           <div class="text-center font-custom2 my-3 md:my-0">
+            <h2 class="text-[28px] md:text-[46px] font-medium">100K+</h2>
+            <p class="text-[14px] md:text-[15px] tracking-wide text-[#141516]" >Consignments Delivered</p>
+           </div>
+           <div class="text-center font-custom2 my-3 md:my-0">
+            <h2 class="text-[28px] md:text-[46px] font-medium">5M+</h2>
+            <p class="text-[14px] md:text-[15px] tracking-wide text-[#141516]" >Tones of Packages Delivered</p>
+           </div>
+           <div class="text-center font-custom2 my-3 md:my-0">
+            <h2 class="text-[28px] md:text-[46px] font-medium">2M+</h2>
+            <p class="text-[14px] md:text-[15px] tracking-wide text-[#141516]" >Countless Packages Shipped</p>
+           </div>
+        </div>
+
+        <div id="main-div" class="w-full h-[505px] bg-[url('/dist/image/aero.jpg')] bg-cover bg-center mt-24 flex">
+         
+          <div id="content1" class="w-[300px] md:w-[335px] border-r-[1px] border-gray-400 px-4 md:px-9 py-12 font-custom2 hover:transition hover:ease-in hover:delay-100 hover:bg-[#072d26cc]  ">
+            <h2 class="text-[46px] font-medium text-white">01</h2>
+            <h2 class="mt-[303px] text-3xl font-semibold text-white">Efficient</h2>
+            <p class="text-[16px] hidden md:hidden leading-5 font-medium text-white overflow-hidden ">Felis ultrices diam tellus pellentesque ultrices. Augue magna egestas sed proin tortor
+              mattis eget consequat varius.</p>
+           </div>
+           <div class="w-[290px] md:w-[335px] md:border-r-[1px] border-gray-400 px-4 md:px-9 py-12 font-custom2 hover:transition hover:ease-in hover:delay-100 hover:bg-[#072d26cc] ">
+            <h2 class="text-[46px] font-medium text-white">02</h2>
+            <h2 class="mt-[303px] text-3xl font-semibold text-white">Scalable</h2>
+            <p class="text-[16px] hidden md:hidden leading-5 font-medium text-white overflow-hidden ">Felis ultrices diam tellus pellentesque ultrices. Augue magna egestas sed proin tortor
+              mattis eget consequat varius.</p>
+           </div>
+           <div class="w-[335px] hidden md:block border-r-[1px] border-gray-400 px-9 py-12 font-custom2 hover:transition hover:ease-in hover:delay-100 hover:bg-[#072d26cc] ">
+            <h2 class="text-[46px] font-medium text-white">03</h2>
+            <h2 class="mt-[303px] text-3xl font-semibold text-white">Fast</h2>
+            <p class="text-[16px] md:hidden leading-5 font-medium text-white overflow-hidden ">Felis ultrices diam tellus pellentesque ultrices. Augue magna egestas sed proin tortor
+              mattis eget consequat varius.</p>
+           </div>
+           <div class="w-[343px] hidden md:block  px-9 py-12 font-custom2 hover:transition hover:ease-in hover:delay-100 hover:bg-[#072d26cc] ">
+            <h2 class="text-[46px] font-medium text-white">04</h2>
+            <h2 class="mt-[303px] text-3xl font-semibold text-white">Reliable</h2>
+            <p class="text-[16px] md:hidden leading-5 font-medium text-white overflow-hidden ">Felis ultrices diam tellus pellentesque ultrices. Augue magna egestas sed proin tortor
+              mattis eget consequat varius.</p>
+           </div>
+        </div>
+
+        <div class=" md:flex md:flex-wrap my-32 md:my-72 md:mb-2 px-2 md:px-[60px]  font-custom2">
+      
+          <div class="md:w-[360px] ">
+            <img src="image/truck-vector.png" alt="">
+            <h2 class="text-5xl font-medium mt-6 pr-2">Logistics Solutions</h2>
+            <p class="text-[15px] text-[#0c0c0d] mt-6 ">Felis ultrices diam tellus pellentesque ultrices. Augue magna egestas sed proin tortor mattis eget consequat varius.</p>
+            <button class="px-4 py-[8px] text-[14.5px] tracking-wide font-semibold bg-[#ff832f] mt-6 text-[#fafafa] font-custom1">All Services <i class="fa-regular fa-paper-plane text-lg"></i></button>
+           </div>
+
+           <div class=" md:w-[388px] md:relative md:bottom-40 mt-8 md:mt-0  md:ml-12 ">
+            
+            <div class=" border-l-8 md:border-l-8 border-[#ff832f] flex px-0 md:px-4 py-8 bg-[#072d26] text-white">
+                <div>
+                  <img src="image/one.png" class="h-12 w-36" alt="">
+                </div>
+                <div class="px-1">
+                  <p class="text-xl">International Shipping</p>
+                  <p class="text-[14.9px] tracking-wide">Felis ultrices diam tellus pellentesque ultrices. Augue magna egestas sed proin tortor mattis eget consequat varius.</p>
+                  <p class="text-lg underline mt-6">Learn More</p>
+                </div>
+             </div>
+
+            <div>
+              <div class="flex flex-wrap border-b-[1px] border-gray-400 mt-7">
+                <img src="image/two.png" class="h-20" alt="">
+                <p class="text-xl font-medium pl-3">Warehousing</p>
+              </div>
+              <div class="flex flex-wrap border-b-[1px] border-gray-400 mt-7">
+                <img src="image/two.png" class="h-20" alt="">
+                <p class="text-xl font-medium pl-3">Railway Freight</p>
+              </div>
+              <div class="flex flex-wrap border-b-[1px] border-gray-400 mt-7">
+                <img src="image/two.png" class="h-20" alt="">
+                <p class="text-xl font-medium pl-3">Sea Freight</p>
+              </div>
+              <div class="flex flex-wrap border-b-[1px] border-gray-400 mt-7">
+                <img src="image/two.png" class="h-20" alt="">
+                <p class="text-xl font-medium pl-3">Network Transportation</p>
+              </div>
+
+            </div>
+
+           </div>
+
+           <div class=" w-auto md:w-96 md:relative md:bottom-24 md:ml-6 mt-8 md:mt-0" >
+            <img src="image/img-2.jpg" alt="">
+           </div>
+
+        </div>
+
+      <div class="text-center font-custom2">
+        <h2 class="text-5xl font-medium">Our Distribution Assosiates</h2>
+        <div  class=" mt-20">
+          <!-- one -->
+          <div class="overflow-hidden mx-9 md:mx-32 "> <!-- Parent container with overflow hidden -->
+            <div id="box1" class="box1 flex w-[500px]  space-x-20 animate-slideLeft">
+                <img src="image/1.png" alt="">
+                <img src="image/2.png" alt="">
+                <img src="image/3.png" alt="">
+                <img src="image/5.png" alt="">
+                <img src="image/1.png" alt="">
+                <img src="image/2.png" alt="">
+                <img src="image/3.png" alt="">
+                <img src="image/5.png" alt="">
+                <img src="image/2.png" alt="">
+                <img src="image/3.png" alt="">
+                <img src="image/5.png" alt="">
+                <img src="image/2.png" alt="">
+                <img src="image/3.png" alt="">
+                <img src="image/5.png" alt="">
+            </div>
+        </div>
+        <!-- two -->
+        <div class="overflow-hidden mx-9 md:mx-32 mt-12 "> <!-- Parent container with overflow hidden -->
+          <div id="box1" class="box1 flex w-[500px]  space-x-20 animate-slideLeft">
+              <img src="image/1.png" alt="">
+              <img src="image/2.png" alt="">
+              <img src="image/3.png" alt="">
+              <img src="image/5.png" alt="">
+              <img src="image/1.png" alt="">
+              <img src="image/2.png" alt="">
+              <img src="image/3.png" alt="">
+              <img src="image/5.png" alt="">
+              <img src="image/2.png" alt="">
+              <img src="image/3.png" alt="">
+              <img src="image/5.png" alt="">
+              <img src="image/2.png" alt="">
+              <img src="image/3.png" alt="">
+              <img src="image/5.png" alt="">
+          </div>
+      </div>
+       <!-- three -->
+       <div class="overflow-hidden mx-9 md:mx-32 mt-12 "> <!-- Parent container with overflow hidden -->
+        <div id="box1" class="box1 flex w-[500px]  space-x-20 animate-slideLeft">
+            <img src="image/1.png" alt="">
+            <img src="image/2.png" alt="">
+            <img src="image/3.png" alt="">
+            <img src="image/5.png" alt="">
+            <img src="image/1.png" alt="">
+            <img src="image/2.png" alt="">
+            <img src="image/3.png" alt="">
+            <img src="image/5.png" alt="">
+            <img src="image/2.png" alt="">
+            <img src="image/3.png" alt="">
+            <img src="image/5.png" alt="">
+            <img src="image/2.png" alt="">
+            <img src="image/3.png" alt="">
+            <img src="image/5.png" alt="">
+        </div>
+    </div>
+        
+        </div>
+      </div>
+
+      <div id="show" class="w-full pt-36 md:pt-44 pl-6 md:pl-40 h-[670px] mt-20 bg-[url(/dist/image/testimonial-img.jpg)] bg-cover bg-center  font-custom2">
+            <div class="mt-12 md:mt-0">
+              <img src="image/qoute.png" alt="">
+              <h3 class="text-white mt-6  text-4xl md:text-5xl font-medium">Reliable and efficient, <br>they ensure timely <br> deliveries all fail</h3>
+              <div class="flex items-center text-white font-custom2 mt-9 md:mt-12" >
+                <img src="image/user-2.png" alt="">
+                <div class="ml-4 ">
+                  <p class="text-base ">Satisfied Client</p>
+                  <p class="text-xl">Caleb</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <img src="image/qoute.png" alt="">
+              <h3 class="text-white mt-6  text-4xl md:text-5xl font-medium">Dependable and prompt, <br>they consistently guarantee</h3>
+              <div class="flex items-center text-white font-custom2 mt-9 md:mt-12" >
+                <img src="image/user-2.png" alt="">
+                <div class="ml-4 ">
+                  <p class="text-base ">Satisfied Client</p>
+                  <p class="text-xl">Ethan</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <img src="image/qoute.png" alt="">
+              <h3 class="text-white mt-6  text-4xl md:text-5xl font-medium">Reliable and efficient, <br>they always ensure <br> deliveries arrive on time</h3>
+              <div class="flex items-center text-white font-custom2 mt-9 md:mt-12" >
+                <img src="image/user-1.png" alt="">
+                <div class="ml-4 ">
+                  <p class="text-base ">Satisfied Client</p>
+                  <p class="text-xl">john Thomson</p>
+                </div>
+              </div>
+            </div>
+
+           
+      </div>
+
+      <div class="w-full text-center font-custom2 mt-12 ">
+        <h2 class="text-5xl font-medium ">Our Enthusiast Team</h2>
+       <!-- container1 -->
+        <div class="w-full mt-8  px-2 md:px-16 md:flex md:flex-wrap  ">
+          <!-- box1 -->
+          <div class=" py-0 md:py-12 bg-[#072d26] md:flex">
+            <!-- image -->
+             <div><img class="w-full md:w-[180px]" src="image/our-team-img-1.jpg" alt=""></div>
+             <!-- content --> 
+             <div class="md:w-[410px] px-2 md:px-5 text-left pb-6">
+               <p class="text-[#adafb6] font-medium text-xl md:text-[14.8px] mt-4 md:mt-0">Central Integration Representative</p>
+               <p class="text-4xl md:text-xl text-[#e7e7e7] mt-4 md:mt-1">Nicolas Rippin</p>
+               <p class="text-lg md:text-[15px] text-[#eaeaec] mt-4 md:mt-2 leading-6">Enim ultricies aliquam lectus in. Viverra in dolor fringilla velit morbi pulvinar mauris quis dolor. Enim convallis duis ac scelerisque proin.</p>
+               <div class="mt-2 space-x-2">
+                <i class="fa-brands fa-x-twitter h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-instagram h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-facebook-f h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+              </div>
+              </div>
+             
+          </div>
+          <!-- box2 -->
+          <div class=" py-0 md:py-12 bg-[#072d26] md:flex md:ml-6 mt-9 md:mt-0">
+            <!-- image -->
+             <div><img class="w-full md:w-[181px]" src="image/our-team-img-3.jpg" alt=""></div>
+             <!-- content --> 
+             <div class="md:w-[410px] px-2 md:px-5 text-left pb-6">
+               <p class="text-[#adafb6] font-medium text-xl md:text-[14.8px] mt-4 md:mt-0">Central Infrastructure Officer</p>
+               <p class="text-4xl md:text-xl text-[#e7e7e7] mt-4 md:mt-1">Maureen Murphy</p>
+               <p class="text-lg md:text-[15px] text-[#eaeaec] mt-4 md:mt-2 leading-6">Enim ultricies aliquam lectus in. Viverra in dolor fringilla velit morbi pulvinar mauris quis dolor. Enim convallis duis ac scelerisque proin.</p>
+               <div class="mt-2 space-x-2">
+                <i class="fa-brands fa-x-twitter h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-instagram h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-facebook-f h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+              </div>
+              </div>
+           
+          </div>
+
+        </div>
+
+        <!-- container2 -->
+
+        <div class="w-full mt-6  px-2 md:px-16 md:flex md:flex-wrap  ">
+          <!-- box1 -->
+          <div class=" py-0 md:py-12 bg-[#072d26] md:flex">
+            <!-- image -->
+             <div><img class="w-full md:w-[180px]" src="image/our-team-img-2.jpg" alt=""></div>
+             <!-- content --> 
+             <div class="md:w-[410px] px-2 md:px-5 text-left pb-6">
+               <p class="text-[#adafb6] font-medium text-xl md:text-[14.8px] mt-4 md:mt-0">Senior Optimization Officer</p>
+               <p class="text-4xl md:text-xl text-[#e7e7e7] mt-4 md:mt-1">Terri Mante</p>
+               <p class="text-lg md:text-[15px] text-[#eaeaec] mt-4 md:mt-2 leading-6">Enim ultricies aliquam lectus in. Viverra in dolor fringilla velit morbi pulvinar mauris quis dolor. Enim convallis duis ac scelerisque proin.</p>
+               <div class="mt-2 space-x-2">
+                <i class="fa-brands fa-x-twitter h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-instagram h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-facebook-f h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+              </div>
+              </div>
+             
+          </div>
+          <!-- box2 -->
+          <div class=" py-0 md:py-12 bg-[#072d26] md:flex md:ml-6 mt-9 md:mt-0">
+            <!-- image -->
+             <div><img class="w-full md:w-[181px]" src="image/our-team-img-4.jpg" alt=""></div>
+             <!-- content --> 
+             <div class="md:w-[410px] px-2 md:px-5 text-left pb-6">
+               <p class="text-[#adafb6] font-medium text-xl md:text-[14.8px] mt-4 md:mt-0">Corporate Paradigm Consultant</p>
+               <p class="text-4xl md:text-xl text-[#e7e7e7] mt-4 md:mt-1">Clifford Oberbrunner</p>
+               <p class="text-lg md:text-[15px] text-[#eaeaec] mt-4 md:mt-2 leading-6">Enim ultricies aliquam lectus in. Viverra in dolor fringilla velit morbi pulvinar mauris quis dolor. Enim convallis duis ac scelerisque proin.</p>
+               <div class="mt-2 space-x-2">
+                <i class="fa-brands fa-x-twitter h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-instagram h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+                <i class="fa-brands fa-facebook-f h-6 w-6 text-center py-[5px] text-[14px] bg-[#ff832f] text-white "></i>
+              </div>
+              </div>
+           
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="w-full h-96  mt-32">
+       <!-- content1 -->
+        <div class="flex flex-wrap justify-between px-4 md:px-16 font-custom2">
+          <h2 class="text-5xl font-medium">Blogs</h2>
+          <button class="bg-[#ff832f] px-5 h-12  md:h-[45px] font-medium text-lg md:text-[14.4px] text-white font-custom1">See All Blogs <i class="fa-regular fa-paper-plane text-xl"></i> </button>
+        </div>
+        
+        <!-- content2 -->
+         <div class="md:flex md:flex-wrap md:px-[50px]">
+          <div class="px-0 mx-3  mt-12  ">
+            <div class="w-40 md:w-[389px]   " >
+              <img   src="image/port1.jpg" alt="">
+              <div class="flex flex-wrap border-[1px] border-gray-400 pb-2 ">
+                <!-- content1 -->
+                <div class=" px-[9px] py-6">
+                  <p class="text-3xl font-semibold">02</p>
+                  <p class="font-medium">Aug</p>
+                </div>
+                <!-- content2 -->
+                  <div class="pl-3 py-2  font-custom2 border-l-[1px] border-gray-400">
+                    <p class="text-[14.8px]">Agriculture</p>
+                     <h2 class="text-xl font-medium text-[#ococod]">The Great Innovators</h2>
+                     <p class="text-[15px] text-[#adafb6]] w-80 font-medium">Neque volutpat leo augue ut. Sit dictum massa diam aliquam suscipit id purus volutpat nisl.</p>
+                     <div class="flex  mt-4 items-center space-x-3 ">
+                      <i class="fa-solid fa-plus bg-[#ff832f] h-10 w-10 text-xl font-bold text-white text-center rounded-full pt-2" ></i>
+                      <p class="font-medium text-base text-[#ococod] ">Read More</p>
+                     </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-0  mx-2 mt-12  ">
+            <div class="w-40 md:w-[389px]   " >
+              <img   src="image/port1.jpg" alt="">
+              <div class="flex flex-wrap border-[1px] border-gray-400 pb-2 ">
+                <!-- content1 -->
+                <div class=" px-[9px] py-6">
+                  <p class="text-3xl font-semibold">02</p>
+                  <p class="font-medium">Aug</p>
+                </div>
+                <!-- content2 -->
+                  <div class="pl-3 py-2  font-custom2 border-l-[1px] border-gray-400">
+                    <p class="text-[14.8px]">Agriculture</p>
+                     <h2 class="text-xl font-medium text-[#ococod]">The Great Innovators</h2>
+                     <p class="text-[15px] text-[#adafb6]] w-80 font-medium">Neque volutpat leo augue ut. Sit dictum massa diam aliquam suscipit id purus volutpat nisl.</p>
+                     <div class="flex  mt-4 items-center space-x-3 ">
+                      <i class="fa-solid fa-plus bg-[#ff832f] h-10 w-10 text-xl font-bold text-white text-center rounded-full pt-2" ></i>
+                      <p class="font-medium text-base text-[#ococod] ">Read More</p>
+                     </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-0  mx-3 mt-12  ">
+            <div class="w-40 md:w-[389px]   " >
+              <img   src="image/port1.jpg" alt="">
+              <div class="flex flex-wrap border-[1px] border-gray-400 pb-2 ">
+                <!-- content1 -->
+                <div class=" px-[9px] py-6">
+                  <p class="text-3xl font-semibold">02</p>
+                  <p class="font-medium">Aug</p>
+                </div>
+                <!-- content2 -->
+                  <div class="pl-3 py-2  font-custom2 border-l-[1px] border-gray-400">
+                    <p class="text-[14.8px]">Agriculture</p>
+                     <h2 class="text-xl font-medium text-[#ococod]">The Great Innovators</h2>
+                     <p class="text-[15px] text-[#adafb6]] w-80 font-medium">Neque volutpat leo augue ut. Sit dictum massa diam aliquam suscipit id purus volutpat nisl.</p>
+                     <div class="flex  mt-4 items-center space-x-3 ">
+                      <i class="fa-solid fa-plus bg-[#ff832f] h-10 w-10 text-xl font-bold text-white text-center rounded-full pt-2" ></i>
+                      <p class="font-medium text-base text-[#ococod] ">Read More</p>
+                     </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      >
+      </div>
+      
+
+     </main>
+ 
+     <!-- main section end here -->
+
+
+     <script src="app.js"></script>
+  </body>
+</html>
